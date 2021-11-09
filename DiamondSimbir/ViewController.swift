@@ -8,7 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var count : Int = 0
+    
     @IBOutlet weak var labelBottom: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
@@ -20,7 +22,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func ImagButton(_ sender: Any) {
-        labelBottom.text = "Diamond!" 
+        if count % 2 == 0{
+                labelBottom.text = "Diamond!"
+        }
+        if count % 2 != 0 {
+            labelBottom.text = "Yes! it is!"
+        }
+        count = count + 1
+        
     }
     
 
