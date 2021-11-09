@@ -1,24 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DiamondSimbir" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="depositphotos_3929513-stock-photo-diamond" translatesAutoresizingMaskIntoConstraints="NO" id="dTY-6B-TxX">
+                                <rect key="frame" x="87" y="326.5" width="240" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="M04-3C-GXp"/>
+                                    <constraint firstAttribute="width" constant="240" id="gik-GS-m4b"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIX-S4-aD3">
+                                <rect key="frame" x="87" y="327" width="240" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="ImagButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A6e-Xw-WPg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lfidsjcslkdvns" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ea-aU-AbA">
+                                <rect key="frame" x="106" y="619.5" width="202" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="dTY-6B-TxX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Azd-0M-Q0a"/>
+                            <constraint firstItem="1ea-aU-AbA" firstAttribute="top" secondItem="dTY-6B-TxX" secondAttribute="bottom" constant="50" id="cMw-Ug-QO8"/>
+                            <constraint firstItem="dTY-6B-TxX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="czk-je-g0T"/>
+                            <constraint firstItem="dTY-6B-TxX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eXc-ro-8Jb"/>
+                            <constraint firstItem="dTY-6B-TxX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="frq-M6-UNT"/>
+                            <constraint firstItem="1ea-aU-AbA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yzb-Th-IUl"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelBottom" destination="1ea-aU-AbA" id="6ch-iJ-2y1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="81.696428571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="depositphotos_3929513-stock-photo-diamond" width="600" height="600"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
