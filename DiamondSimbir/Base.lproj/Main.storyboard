@@ -20,12 +20,16 @@
                                 <rect key="frame" x="87" y="326.5" width="240" height="243"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="243" id="M04-3C-GXp"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="fpr-vG-HI3"/>
                                     <constraint firstAttribute="width" constant="240" id="gik-GS-m4b"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIX-S4-aD3">
-                                <rect key="frame" x="87" y="327" width="240" height="244"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIX-S4-aD3">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="h6S-Dg-iPg"/>
+                                    <constraint firstAttribute="height" constant="240" id="ym4-eg-g4k"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
@@ -43,7 +47,9 @@
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
                             <constraint firstItem="dTY-6B-TxX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Azd-0M-Q0a"/>
-                            <constraint firstItem="1ea-aU-AbA" firstAttribute="top" secondItem="dTY-6B-TxX" secondAttribute="bottom" constant="50" id="cMw-Ug-QO8"/>
+                            <constraint firstItem="lIX-S4-aD3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="B7s-Rv-pRb"/>
+                            <constraint firstItem="lIX-S4-aD3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S8U-Hu-WFR"/>
+                            <constraint firstItem="1ea-aU-AbA" firstAttribute="top" secondItem="dTY-6B-TxX" secondAttribute="bottom" constant="50" id="Wiv-OF-vpX"/>
                             <constraint firstItem="dTY-6B-TxX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="czk-je-g0T"/>
                             <constraint firstItem="dTY-6B-TxX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eXc-ro-8Jb"/>
                             <constraint firstItem="dTY-6B-TxX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="frq-M6-UNT"/>
